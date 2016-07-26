@@ -1,0 +1,15 @@
+:host {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+:host > div > img {
+    width:200px;
+    height:263px;
+}
+
+:host > div {
+    margin:10px;
+    /*flex-basis:50%;*/
+}
+
