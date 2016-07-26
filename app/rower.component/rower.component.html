@@ -1,0 +1,32 @@
+<div class='title-bar'>
+    <div class="name">
+        {{rower.name}}
+    </div>
+    <div class="remove" (click)="raceService.removeRower(rower.name)"><img src="/app/rower.component/assets/remove.png" alt="Remove rower"></div>
+</div>
+<div class="body">
+    <div class="rowerdata">
+        <div>
+            <value-graph [values]="rower.speed_average" class="value"></value-graph>
+            <div class="value">{{ rower.speed_average.length > 0 ? rower.speed_average[rower.speed_average.length - 1] : 0 }}<span class="units">m/s</span></div>
+            <p class="label">SPEED</p>
+        </div>
+        <div>
+            <div class="value">{{rower.distance}}<span class="units">m</span></div>
+            <p class="label">DISTANCE</p>
+        </div>
+        <div>
+            <div class="value">{{raceService.raceDistance - rower.distance}}<span class="units">m</span></div>
+            <p class="label">REMAINING</p>
+        </div>
+        <div class="clock">
+            <div class="value"><div>{{raceService.clock}}</div></div>
+            <p class="label">TIME</p>
+        </div>
+    </div>
+    <div class="course">
+        <div [style.flex]="raceService.raceDistance - rower.distance"></div>
+        <div class="icon"><img [src]="rowerImageUrl" /></div>
+        <div [style.flex]="rower.distance"></div>
+    </div>
+</div>

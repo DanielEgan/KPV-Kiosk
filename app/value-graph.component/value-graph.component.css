@@ -1,0 +1,11 @@
+:host {
+    display:flex;
+    align-items:flex-end;
+    justify-content: flex-start;
+}
+
+:host > div {
+    flex:1;
+    max-width:5px;
+    background-color:black;
+}
