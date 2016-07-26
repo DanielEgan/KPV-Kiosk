@@ -1,8 +1,8 @@
 {
-  "name": "waterbug-ui",
+  "name": "kpv-kiosk",
   "version": "0.1.0",
   "author": "Jeremy Foster <jeremy.foster@live.com> (http://codefoster.com)",
-  "description": "Client website for the Waterbug project",
+  "description": "KidProVision Kiosk",
   "scripts": {
     "tsc": "tsc",
     "tsc:w": "tsc -w",
@@ -13,7 +13,7 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/codefoster/waterbug-ui.git"
+    "url": "git+https://github.com/danielegan/kpv-kiosk.git"
   },
   "dependencies": {
     "@angular/common": "^2.0.0-rc.3",
@@ -22,6 +22,7 @@
     "@angular/http": "^2.0.0-rc.3",
     "@angular/platform-browser": "^2.0.0-rc.3",
     "@angular/platform-browser-dynamic": "^2.0.0-rc.3",
+    "@angular/router": "^3.0.0-beta.2",
     "@angular/upgrade": "^2.0.0-rc.3",
     "@angular2-material/button": "^2.0.0-alpha.5-2",
     "@angular2-material/core": "^2.0.0-alpha.5-2",
