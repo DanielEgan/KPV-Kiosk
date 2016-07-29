@@ -1,0 +1,32 @@
+validate for {{ id }}
+
+<video #videoElement autoplay="true" id="videoElement">
+
+</video>
+<button (click)="startStream()">start</button>
+<canvas id="canvas"></canvas>   
+
+<!--<script>
+    alert('script');
+    window.onload = function() {
+        alert('hi');
+        navigator.getUserMedia(
+            { video: true },
+            function(stream) {
+                console.log('here');
+                videoElement.src = window.URL.createObjectURL(stream);
+                
+                /////////
+                // setTimeout(snapshot,2000);
+
+            },  
+            function(err) {
+                console.error(err);
+            }
+        );
+        // function snapshot() {
+        //     canvas.getContext('2d').drawImage(video, 0, 0);
+        // }
+    }
+
+</script>-->

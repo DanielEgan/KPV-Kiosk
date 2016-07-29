@@ -3,7 +3,7 @@
     flex-wrap: wrap;
 }
 
-:host > div > img {
+:host > div img.kid {
     width:200px;
     height:263px;
 }

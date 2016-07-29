@@ -1,14 +1,10 @@
 import { Component, provide } from "@angular/core";
-import { RaceService } from "../race.service/race.service"
-import { DashboardComponent } from "../dashboard.component/dashboard.component";
-import { RowerListComponent } from "../rower-list.component/rower-list.component";
-
 @Component({
     selector: "kid-select",
     templateUrl: "app/kid-select.component/kid-select.component.html",
+    styleUrls:["app/kid-select.component/kid-select.component.css"],
     directives: [],
-    providers: [],
-    styleUrls:["app/kid-select.component/kid-select.component.css"]
+    providers: []
 })
 export class KidSelectComponent {
     kids = [];
